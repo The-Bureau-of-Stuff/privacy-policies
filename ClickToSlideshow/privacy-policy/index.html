@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClickTo: Slideshow — Privacy policy</title>
+<meta name="description" content="Privacy policy for ClickTo: Slideshow, a Windows utility that turns photos and music into a slideshow entirely on your own computer.">
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    max-width: 38rem;
+    margin: 0 auto;
+    padding: 3rem 1.25rem 5rem;
+    color: #1c1f26;
+    background: #ffffff;
+  }
+  header { border-bottom: 1px solid #e3e5ea; padding-bottom: 1.25rem; margin-bottom: 2rem; }
+  h1 { font-size: 1.65rem; margin: 0 0 .35rem; }
+  h2 { font-size: 1.1rem; margin: 2.25rem 0 .5rem; }
+  .meta { color: #5f6672; font-size: .9rem; margin: 0; }
+  .summary {
+    background: #f1f7f6;
+    border-left: 3px solid #0F6E63;
+    padding: 1rem 1.15rem;
+    margin: 0 0 1.5rem;
+  }
+  .summary p { margin: 0; }
+  ul { padding-left: 1.15rem; }
+  li { margin: .3rem 0; }
+  code { background: #f1f7f6; padding: .1rem .35rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid #e3e5ea; color: #5f6672; font-size: .9rem; }
+  a { color: #0F6E63; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e8ec; background: #16181d; }
+    header, footer { border-color: #2c3038; }
+    .meta, footer { color: #a0a6b0; }
+    .summary { background: #17211f; border-left-color: #3fa898; }
+    code { background: #1e2128; }
+    a { color: #5fbfb0; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>ClickTo: Slideshow — Privacy policy</h1>
+  <p class="meta">Last updated 25 September 2026</p>
+</header>
+
+<div class="summary">
+  <p>ClickTo: Slideshow collects nothing, sends nothing, and stores nothing about you. Everything it does happens on your own computer, and it works exactly the same with no internet connection at all.</p>
+</div>
+
+<h2>What data is collected</h2>
+
+<p>None. ClickTo: Slideshow has no accounts, no sign-in, no analytics, no automatic crash reporting, no advertising identifiers, and no telemetry of any kind. It does not build a profile of you and there is nothing for us to sell, share, or hand over, because nothing ever reaches us in the first place. (The app does keep a small local diagnostic log on your own device to help with bug reports — see "Data stored on your device" below — but it is never transmitted anywhere automatically.)</p>
+
+<h2>What the app does with your files</h2>
+
+<p>When you select photos in File Explorer and choose <strong>Create slideshow</strong>, ClickTo: Slideshow reads those photos — and any music you add — in order to show you thumbnails and to build the slideshow you asked for. Specifically:</p>
+
+<ul>
+  <li>Your photos and music are opened <strong>read-only</strong>. The app never modifies, moves, renames, or deletes your source files. Rotating a slide changes only the slideshow that gets written.</li>
+  <li>Videos, PowerPoint files and project files are written only to the location you choose in the save dialog.</li>
+  <li>Image and audio data is held in memory while you work and released when you close the window.</li>
+  <li>The app writes a short-lived list of the file paths you selected to your user temporary folder so it knows what you picked. That file is deleted as soon as the app has read it. If the app fails to start, the file can be left behind in that folder until you delete it.</li>
+</ul>
+
+<h2>Temporary files made while working</h2>
+
+<p>Two things create temporary copies of your content on your own machine. Neither is ever transmitted anywhere.</p>
+
+<ul>
+  <li><strong>Decoded audio.</strong> Windows has no built-in decoder for <code>.ogg</code> and <code>.opus</code> files, so if you add one, the app decodes it to a plain WAV copy in the app's own temporary storage and plays that instead. This is a copy of your audio, kept on your own computer, and it is deleted automatically the next time the app starts once it has gone about a week without being used.</li>
+  <li><strong>Intermediate video.</strong> Saving an MP4 happens in two passes — the pictures are rendered first, then your music is added — so a partial video file exists in the app's own temporary storage during the export and is removed afterwards.</li>
+</ul>
+
+<h2>What ends up inside the files you save</h2>
+
+<p>This matters if you send the result to someone else.</p>
+
+<ul>
+  <li><strong>MP4 video</strong> contains your pictures and your music, and nothing about you.</li>
+  <li><strong>PowerPoint files</strong> embed your pictures, and also record — in each slide's notes — the <strong>original filename</strong> of that picture and the date it was taken, so that the deck is still self-explanatory years later without our app. A PowerPoint file also carries a hidden record of the slideshow's settings so ClickTo: Slideshow can reopen and edit it; that record lists your picture and music filenames but never the folders they were in. Anyone you send that file to can read the filenames and capture dates. If you would rather they didn't, save an MP4 instead.</li>
+  <li><strong>Project files</strong> are for your own use and reference your photos where they sit on your disk; they contain no copy of the pictures themselves.</li>
+</ul>
+
+<h2>Network access</h2>
+
+<p>ClickTo: Slideshow makes no network connections. It has no update checker, no license check, no cloud processing, and no remote configuration. Your photographs are never uploaded anywhere, because the app has no mechanism to upload anything. The installed package requests no networking permission of any kind, which you can verify for yourself in the app's details in Windows Settings.</p>
+
+<h2>Data stored on your device</h2>
+
+<p>Interface preferences such as sort order, thumbnail size, default slide duration and output options are stored locally in the app's own settings storage on your computer. They contain no personal information, never leave your device, and are removed when you uninstall the app.</p>
+
+<p>The app also keeps a local diagnostic log of errors and warnings it encounters (such as a file that failed to load, or an unexpected crash), so that if something goes wrong you have something concrete to attach to a support email instead of just "it stopped working." This log:</p>
+
+<ul>
+  <li>Stays entirely on your device, in your own user profile folder — it is never uploaded, transmitted, or read by anyone unless you choose to open it yourself and send it to us.</li>
+  <li>Is not telemetry: nothing is sent automatically, on a schedule, or on startup. Nothing about your use of the app is ever reported anywhere unless you deliberately email it.</li>
+  <li>Is limited to error and warning details — what went wrong, and, where relevant to diagnosing it, the name or path of the file involved. It never contains your photographs, your music, or the slideshows you create.</li>
+  <li>Keeps only the log files from your 14 most recent days of use — older ones are deleted automatically — and is removed entirely when you uninstall the app.</li>
+</ul>
+
+<h2>Children's privacy</h2>
+
+<p>ClickTo: Slideshow is a general-purpose utility. It does not knowingly collect information from anyone, including children, because it does not collect information from anyone at all.</p>
+
+<h2>Third parties</h2>
+
+<p>ClickTo: Slideshow contains no third-party analytics, advertising, or tracking components. It uses several open-source software libraries to read image, audio and presentation formats; these run entirely on your computer and are credited in the app's About panel. The app is distributed through the Microsoft Store; Microsoft's own handling of your Store account and download history is governed by the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a> and is outside our control.</p>
+
+<h2>Changes to this policy</h2>
+
+<p>If this policy ever changes, the revised version will be published at this same address with an updated date at the top. Since the app collects nothing, any future change would be to add a feature that does — and that would be announced in the release notes, not slipped in quietly.</p>
+
+<h2>Contact</h2>
+
+<p>Questions about this policy can be sent to <a href="mailto:thebureauofstuff@gmail.com">thebureauofstuff@gmail.com</a>.</p>
+
+<footer>
+  ClickTo: Slideshow is a free Windows utility for turning photos and music into a slideshow.
+</footer>
+
+</body>
+</html>
