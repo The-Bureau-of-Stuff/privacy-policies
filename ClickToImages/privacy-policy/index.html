@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClickTo: Images — Privacy policy</title>
+<meta name="description" content="Privacy policy for ClickTo: Images, a Windows utility that saves the pages of a PDF as image files entirely on your own computer.">
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    max-width: 38rem;
+    margin: 0 auto;
+    padding: 3rem 1.25rem 5rem;
+    color: #1c1f26;
+    background: #ffffff;
+  }
+  header { border-bottom: 1px solid #e3e5ea; padding-bottom: 1.25rem; margin-bottom: 2rem; }
+  h1 { font-size: 1.65rem; margin: 0 0 .35rem; }
+  h2 { font-size: 1.1rem; margin: 2.25rem 0 .5rem; }
+  .meta { color: #5f6672; font-size: .9rem; margin: 0; }
+  .summary {
+    background: #f8f1f6;
+    border-left: 3px solid #7A2D6E;
+    padding: 1rem 1.15rem;
+    margin: 0 0 1.5rem;
+  }
+  .summary p { margin: 0; }
+  ul { padding-left: 1.15rem; }
+  li { margin: .3rem 0; }
+  code { background: #f8f1f6; padding: .1rem .35rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid #e3e5ea; color: #5f6672; font-size: .9rem; }
+  a { color: #7A2D6E; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e8ec; background: #16181d; }
+    header, footer { border-color: #2c3038; }
+    .meta, footer { color: #a0a6b0; }
+    .summary { background: #221a20; border-left-color: #c27ab5; }
+    code { background: #1e2128; }
+    a { color: #d79bcb; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>ClickTo: Images — Privacy policy</h1>
+  <p class="meta">Last updated 5 November 2026</p>
+</header>
+
+<div class="summary">
+  <p>ClickTo: Images collects nothing, sends nothing, and stores nothing about you. Everything it does happens on your own computer, and it works exactly the same with no internet connection at all.</p>
+</div>
+
+<h2>What data is collected</h2>
+
+<p>None. ClickTo: Images has no accounts, no sign-in, no analytics, no automatic crash reporting, no advertising identifiers, and no telemetry of any kind. It does not build a profile of you and there is nothing for us to sell, share, or hand over, because nothing ever reaches us in the first place. (The app does keep a small local diagnostic log on your own device to help with bug reports — see "Data stored on your device" below — but it is never transmitted anywhere automatically.)</p>
+
+<h2>What the app does with your files</h2>
+
+<p>When you select PDFs in File Explorer and choose <strong>Export pages as images</strong>, ClickTo: Images reads those PDFs in order to show you a thumbnail of every page and to save the pages you tick as image files. Specifically:</p>
+
+<ul>
+  <li>Pages are drawn by the PDF renderer built into Windows, on your own computer.</li>
+  <li>Your PDFs are opened <strong>read-only</strong>. The app never modifies, moves, renames, or deletes them. Rotating a page changes only the image that gets saved.</li>
+  <li>Images are written only to the place you choose in the app's options: a folder named after each PDF, the PDF's own folder, or a folder you pick. While a save runs, each image is first written as a temporary file in that same folder and renamed once every page has rendered; if you cancel, the temporary files and any images that save had written are deleted.</li>
+  <li>An existing image with the same name is only replaced after you say so.</li>
+  <li>Page thumbnails are held in memory while you work and released when you close the window. Nothing is cached to disk.</li>
+  <li>The app writes a short-lived list of the file paths you selected to your user temporary folder (<code>%LOCALAPPDATA%\Temp\ClickToImages</code>) so it knows what you picked. That file is deleted as soon as the app has read it. If the app fails to start, the file can be left behind in that folder until you delete it.</li>
+</ul>
+
+<h2>Password-protected PDFs</h2>
+
+<p>If a PDF needs a password, the app asks you for it once, uses it to open that PDF, and keeps it only in memory for as long as it takes to open the document. The password is never saved, never written to the diagnostic log, and never sent anywhere.</p>
+
+<h2>What ends up inside the images you save</h2>
+
+<p>Each image contains a picture of the page and its resolution setting, and nothing about you. The PDF's own document properties (such as its author or title) are not copied into the images. The file name follows the naming pattern shown in the app, which by default includes the PDF's file name and the page number.</p>
+
+<h2>Copying a page to the clipboard</h2>
+
+<p>The app can copy a single page as a picture to the Windows clipboard, so you can paste it into another program. Once it is on the clipboard it is handled by Windows like anything else you copy. If you have turned on clipboard history, or clipboard sync across your devices, in Windows Settings, Windows treats the copied page the same way under those settings; ClickTo: Images itself sends it nowhere.</p>
+
+<h2>Network access</h2>
+
+<p>ClickTo: Images makes no network connections. It has no update checker, no license check, no cloud processing, and no remote configuration. Your documents are never uploaded anywhere, because the app has no mechanism to upload anything. The installed package requests no networking permission of any kind, which you can verify for yourself in the app's details in Windows Settings.</p>
+
+<p>The links in the app's About panel to other ClickTo apps, and the one-time request to rate the app, open the Microsoft Store app. Any connection that follows is made by the Microsoft Store, not by ClickTo: Images.</p>
+
+<h2>Data stored on your device</h2>
+
+<p>Your output preferences — format, resolution, JPEG quality, transparent background, where images are saved (including a folder you chose) and the file-name pattern — are stored locally in the app's own settings storage on your computer. They contain no personal information, never leave your device, and are removed when you uninstall the app.</p>
+
+<p>The app also keeps a local diagnostic log of errors and warnings it encounters (such as a PDF that could not be opened, or an unexpected crash), so that if something goes wrong you have something concrete to attach to a support email instead of just "it stopped working." This log:</p>
+
+<ul>
+  <li>Stays entirely on your device, in the app's own storage — it is never uploaded, transmitted, or read by anyone unless you choose to open it yourself and send it to us.</li>
+  <li>Is not telemetry: nothing is sent automatically, on a schedule, or on startup. Nothing about your use of the app is ever reported anywhere unless you deliberately email it.</li>
+  <li>Is limited to error and warning details — what went wrong, and, where relevant to diagnosing it, the name or path of the file involved. It never contains the pages of your documents, the images you save, or any password.</li>
+  <li>Keeps only the log files from your 14 most recent days of use — older ones are deleted automatically — and is removed entirely when you uninstall the app.</li>
+</ul>
+
+<h2>Children's privacy</h2>
+
+<p>ClickTo: Images is a general-purpose utility. It does not knowingly collect information from anyone, including children, because it does not collect information from anyone at all.</p>
+
+<h2>Third parties</h2>
+
+<p>ClickTo: Images contains no third-party analytics, advertising, or tracking components. It uses a small number of open-source software libraries, which run entirely on your computer and are credited in the app's About panel. The app is distributed through the Microsoft Store; Microsoft's own handling of your Store account and download history is governed by the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a> and is outside our control.</p>
+
+<h2>Changes to this policy</h2>
+
+<p>If this policy ever changes, the revised version will be published at this same address with an updated date at the top. Since the app collects nothing, any future change would be to add a feature that does — and that would be announced in the release notes, not slipped in quietly.</p>
+
+<h2>Contact</h2>
+
+<p>Questions about this policy can be sent to <a href="mailto:thebureauofstuff@gmail.com">thebureauofstuff@gmail.com</a>.</p>
+
+<footer>
+  ClickTo: Images is a free Windows utility for saving the pages of a PDF as image files.
+</footer>
+
+</body>
+</html>

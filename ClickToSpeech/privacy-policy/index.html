@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClickTo: Speech — Privacy policy</title>
+<meta name="description" content="Privacy policy for ClickTo: Speech, a Windows utility that turns documents into audio entirely on your own computer.">
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    max-width: 38rem;
+    margin: 0 auto;
+    padding: 3rem 1.25rem 5rem;
+    color: #1c1f26;
+    background: #ffffff;
+  }
+  header { border-bottom: 1px solid #e3e5ea; padding-bottom: 1.25rem; margin-bottom: 2rem; }
+  h1 { font-size: 1.65rem; margin: 0 0 .35rem; }
+  h2 { font-size: 1.1rem; margin: 2.25rem 0 .5rem; }
+  .meta { color: #5f6672; font-size: .9rem; margin: 0; }
+  .summary {
+    background: #fbf3ee;
+    border-left: 3px solid #B04F1C;
+    padding: 1rem 1.15rem;
+    margin: 0 0 1.5rem;
+  }
+  .summary p { margin: 0; }
+  ul { padding-left: 1.15rem; }
+  li { margin: .3rem 0; }
+  code { background: #fbf3ee; padding: .1rem .35rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid #e3e5ea; color: #5f6672; font-size: .9rem; }
+  a { color: #A2481A; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e8ec; background: #16181d; }
+    header, footer { border-color: #2c3038; }
+    .meta, footer { color: #a0a6b0; }
+    .summary { background: #231b17; border-left-color: #e08a5c; }
+    code { background: #1e2128; }
+    a { color: #f0a77f; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>ClickTo: Speech — Privacy policy</h1>
+  <p class="meta">Last updated 13 November 2026</p>
+</header>
+
+<div class="summary">
+  <p>ClickTo: Speech collects nothing, sends nothing, and stores nothing about you. Everything it does happens on your own computer, and it works exactly the same with no internet connection at all.</p>
+</div>
+
+<h2>What data is collected</h2>
+
+<p>None. ClickTo: Speech has no accounts, no sign-in, no analytics, no automatic crash reporting, no advertising identifiers, and no telemetry of any kind. It does not build a profile of you and there is nothing for us to sell, share, or hand over, because nothing ever reaches us in the first place. (The app does keep a small local diagnostic log on your own device to help with bug reports — see "Data stored on your device" below — but it is never transmitted anywhere automatically.)</p>
+
+<h2>What the app does with your files</h2>
+
+<p>When you select documents in File Explorer and choose <strong>Convert to audio or read aloud</strong>, ClickTo: Speech reads those documents in order to show you the text it will speak, to read it aloud in the window, and to save it as an audio file if you ask. Specifically:</p>
+
+<ul>
+  <li>Your documents are opened <strong>read-only</strong>. The app never modifies, moves, renames, or deletes them.</li>
+  <li>The text is extracted and held in memory while you work, and released when you close the window. It is never saved anywhere except as the audio you choose to save.</li>
+  <li>If a PDF page has no text layer, such as a scanned page, the page is read by the text recognition built into Windows, on your own computer. Nothing is sent to an online recognition service.</li>
+  <li>Reading aloud in the window plays the speech straight from memory; no file is written.</li>
+  <li>Audio files are written only to the place you choose: beside your documents, or a location you pick when you save.</li>
+  <li>The app writes a short-lived list of the file paths you selected to your user temporary folder (<code>%LOCALAPPDATA%\Temp\ClickToSpeech</code>) so it knows what you picked. That file is deleted as soon as the app has read it. If the app fails to start, the file can be left behind in that folder until you delete it.</li>
+</ul>
+
+<h2>Temporary files made while saving</h2>
+
+<p>Saving audio builds the file in the app's own temporary storage on your computer — the speech is recorded first, then converted to MP3 or M4A — and the finished file is then moved to the place you chose. The temporary copies are deleted when the save finishes or is cancelled. If the app is closed unexpectedly part-way through, anything left behind is deleted automatically the next time the app starts. These files are never transmitted anywhere.</p>
+
+<h2>Password-protected PDFs</h2>
+
+<p>If a PDF needs a password, the app asks you for it once, naming the PDF, and uses it only to open that PDF on your computer, both to read its text and to read any scanned pages with Windows' text recognition. It is kept only in memory while the PDF is being opened. The password is never saved, never written to the diagnostic log, and never sent anywhere.</p>
+
+<h2>Voices</h2>
+
+<p>The voices belong to Windows, not to this app. ClickTo: Speech asks Windows' own speech systems to speak the text, on your computer, using the voices installed there.</p>
+
+<p>If you install a voice from another maker, that voice is their software, and Windows hands it the text to be spoken in the same way it would for any other program. Check that maker's own privacy information if you are unsure how their voice works. ClickTo: Speech itself sends your text nowhere.</p>
+
+<h2>What ends up inside the audio files you save</h2>
+
+<p>This matters if you share the result.</p>
+
+<ul>
+  <li>The audio is the spoken text of your documents.</li>
+  <li>Each file is tagged so it behaves properly in a music app: the title (the document's file name, or the file name you chose when several documents are saved as one), the name of the voice as the artist, <code>ClickTo: Speech</code> as the album, and a track number when you save one file per document.</li>
+  <li>Your name, your Windows user name and the folders your documents are in are not written into the file.</li>
+</ul>
+
+<h2>Network access</h2>
+
+<p>ClickTo: Speech makes no network connections. It has no update checker, no license check, no cloud voices, no cloud processing, and no remote configuration. Your documents are never uploaded anywhere, because the app has no mechanism to upload anything. The installed package requests no networking permission of any kind, which you can verify for yourself in the app's details in Windows Settings.</p>
+
+<p>The app's link for getting more voices opens Windows Settings on your own computer. The links in the About panel to other ClickTo apps, and the one-time request to rate the app, open the Microsoft Store app. Any connection that follows is made by Windows or the Microsoft Store, not by ClickTo: Speech.</p>
+
+<h2>Data stored on your device</h2>
+
+<p>Your choices — the voice, speed and pitch, the sort order, and the save options such as format, quality and file naming — are stored locally in the app's own settings storage on your computer. They contain no personal information, never leave your device, and are removed when you uninstall the app.</p>
+
+<p>The app also keeps a local diagnostic log of errors and warnings it encounters (such as a document that could not be read, or an unexpected crash), so that if something goes wrong you have something concrete to attach to a support email instead of just "it stopped working." This log:</p>
+
+<ul>
+  <li>Stays entirely on your device, in the app's own storage — it is never uploaded, transmitted, or read by anyone unless you choose to open it yourself and send it to us.</li>
+  <li>Is not telemetry: nothing is sent automatically, on a schedule, or on startup. Nothing about your use of the app is ever reported anywhere unless you deliberately email it.</li>
+  <li>Is limited to error and warning details — what went wrong, and, where relevant to diagnosing it, the name or path of the file involved. It never contains the text of your documents, the audio you create, or any password.</li>
+  <li>Keeps only the log files from your 14 most recent days of use — older ones are deleted automatically — and is removed entirely when you uninstall the app.</li>
+</ul>
+
+<h2>Children's privacy</h2>
+
+<p>ClickTo: Speech is a general-purpose utility. It does not knowingly collect information from anyone, including children, because it does not collect information from anyone at all.</p>
+
+<h2>Third parties</h2>
+
+<p>ClickTo: Speech contains no third-party analytics, advertising, or tracking components. It uses several open-source software libraries to read Word and PDF documents; these run entirely on your computer and are credited in the app's About panel. The app is distributed through the Microsoft Store; Microsoft's own handling of your Store account and download history is governed by the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a> and is outside our control.</p>
+
+<h2>Changes to this policy</h2>
+
+<p>If this policy ever changes, the revised version will be published at this same address with an updated date at the top. Since the app collects nothing, any future change would be to add a feature that does — and that would be announced in the release notes, not slipped in quietly.</p>
+
+<h2>Contact</h2>
+
+<p>Questions about this policy can be sent to <a href="mailto:thebureauofstuff@gmail.com">thebureauofstuff@gmail.com</a>.</p>
+
+<footer>
+  ClickTo: Speech is a free Windows utility for turning documents into audio.
+</footer>
+
+</body>
+</html>

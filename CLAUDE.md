@@ -2,7 +2,8 @@
 
 ## Project Overview
 Static HTML privacy policy pages for the ClickTo Windows utilities — one self-contained
-`index.html` per app under `<App>/privacy-policy/` (currently `ClickToPDF` and `ClickToSlideshow`).
+`index.html` per app under `<App>/privacy-policy/` (currently `ClickToPDF`, `ClickToSlideshow`,
+`ClickToImages` and `ClickToSpeech`).
 
 ## Build
 No build step — plain static HTML/CSS files.
@@ -20,6 +21,8 @@ See `docs/CURRENT_APPLICATION.md` for full detail.
 
 - `ClickToPDF/privacy-policy/index.html` — privacy policy for ClickTo: PDF
 - `ClickToSlideshow/privacy-policy/index.html` — privacy policy for ClickTo: Slideshow
+- `ClickToImages/privacy-policy/index.html` — privacy policy for ClickTo: Images
+- `ClickToSpeech/privacy-policy/index.html` — privacy policy for ClickTo: Speech
 
 Each page is self-contained (inline CSS, light/dark via `prefers-color-scheme`, no external assets).
 
